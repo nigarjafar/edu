@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACJ,SAAS,EAAC,IAAI;;ACGhB,MAAM;EACJ,gBAAgB,ECEV,OAAO",
+"sources": ["../sass/partials/_example.scss","../sass/style.scss","../sass/partials/_variables.scss"],
+"names": [],
+"file": "style.css"
+}
