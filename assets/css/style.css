@@ -1,8 +1,25 @@
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-regular.ttf); }
 .testh {
   font-size: 50px; }
 
 body {
   background-color: #EEF1F4; }
+
+a, p, h1, h2, h3, h4, h5, h6, span {
+  font-family: 'Lato', sans-serif; }
+
+h3 {
+  font-size: 1.2em; }
+
+h4 {
+  font-size: 1.3em;
+  padding-bottom: 15px; }
+
+p {
+  font-size: 0.9em;
+  letter-spacing: 1px; }
 
 .button-custom {
   border: 1px solid #03A9F4;
@@ -38,10 +55,10 @@ body {
 
 .navbar {
   background: white; }
-  .navbar .navbar-nav > li > a {
-    font-family: 'Lato', sans-serif;
+  .navbar a {
     color: #45586b;
-    font-weight: bold;
+    font-weight: bold; }
+  .navbar .navbar-nav > li > a {
     transition: 0.3s ease;
     transition-property: color,border; }
   .navbar .navbar-nav > li ul {
@@ -63,6 +80,35 @@ body {
         background: white;
         font-size: 14px;
         padding-left: 25px; }
+
+#footer #info-footer {
+  background-color: #343434; }
+  #footer #info-footer div {
+    padding: 30px 0; }
+    #footer #info-footer div h4 {
+      color: white; }
+    #footer #info-footer div p {
+      color: white;
+      font-weight: lighter; }
+#footer #copyright {
+  background: #222222; }
+  #footer #copyright div {
+    padding: 15px 0; }
+    #footer #copyright div h6 {
+      padding-top: 3px;
+      color: #888888; }
+    #footer #copyright div a i {
+      width: 30px;
+      text-align: center;
+      padding: 7px 0;
+      margin: 0 4px;
+      border-radius: 1px;
+      background-color: #484848;
+      color: #888888;
+      transition: all 0.5s ease; }
+    #footer #copyright div a:hover i {
+      background-color: #03A9F4;
+      color: white; }
 
 .testp {
   background-color: #4CAF50; }

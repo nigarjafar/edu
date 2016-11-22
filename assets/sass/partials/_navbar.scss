@@ -1,11 +1,12 @@
 .navbar{
+  a{
+    color: darken($background-color,60%);
+    font-weight:bold;
+  }
   background: white;
   .navbar-nav{
     &>li{
       &>a{
-        font-family: 'Lato', sans-serif;
-        color: darken($background-color,60%);
-        font-weight:bold;
         transition: 0.3s ease;
         transition-property: color,border;
       }
