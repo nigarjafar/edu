@@ -8,6 +8,7 @@ body {
   background-color: #EEF1F4; }
 
 a, p, h1, h2, h3, h4, h5, h6, span {
+  font-family: 'Lato', sans-serif;
   font-family: 'Lato', sans-serif; }
 
 h3 {
@@ -20,6 +21,9 @@ h4 {
 p {
   font-size: 0.9em;
   letter-spacing: 1px; }
+
+input[type="text"] {
+  font-family: 'Lato', sans-serif; }
 
 .button-custom {
   border: 1px solid #03A9F4;
@@ -58,6 +62,14 @@ p {
   .navbar a {
     color: #45586b;
     font-weight: bold; }
+  .navbar .input-group {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 20px; }
+    .navbar .input-group input {
+      border: none;
+      box-shadow: none;
+      width: 0px; }
   .navbar .navbar-nav > li > a {
     transition: 0.3s ease;
     transition-property: color,border; }
@@ -89,7 +101,7 @@ p {
       color: white; }
     #footer #info-footer div p {
       color: white;
-      font-weight: lighter; }
+      font-weight: 400; }
 #footer #copyright {
   background: #222222; }
   #footer #copyright div {
