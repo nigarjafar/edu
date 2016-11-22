@@ -60,6 +60,12 @@ p{
       padding-bottom:$padding-vertical-in;
     }
   }
+}
 
+.green-border{
+  border-bottom:4px solid $green;
+}
 
+.red-border{
+  border-bottom:4px solid $red;
 }
