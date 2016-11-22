@@ -1,0 +1,44 @@
+.navbar{
+  background: white;
+  .navbar-nav{
+    &>li{
+      &>a{
+        font-family: 'Lato', sans-serif;
+        color: darken($background-color,60%);
+        font-weight:bold;
+        transition: 0.3s ease;
+        transition-property: color,border;
+      }
+      ul{
+        box-shadow: none;
+        border-radius: 0;
+        border:none;
+      }
+
+      &:hover{
+
+        &>a{
+          padding-bottom:14px;
+          box-sizing:border-box;
+          background: white;
+          border-bottom:1px solid $primaryColor;
+          color:$primaryColor;
+        }
+
+        .dropdown-menu{
+          display:block;
+          a{
+            transition:all 0.2s ease;
+              //transition-property:border-color;
+            &:hover{
+              border-left:3px solid $primaryColor;
+              background:white;
+              font-size: 14px;
+              padding-left:25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

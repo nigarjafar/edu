@@ -36,6 +36,34 @@ body {
     border-bottom: 1px solid #03A9F4;
     padding-bottom: 15px; }
 
+.navbar {
+  background: white; }
+  .navbar .navbar-nav > li > a {
+    font-family: 'Lato', sans-serif;
+    color: #45586b;
+    font-weight: bold;
+    transition: 0.3s ease;
+    transition-property: color,border; }
+  .navbar .navbar-nav > li ul {
+    box-shadow: none;
+    border-radius: 0;
+    border: none; }
+  .navbar .navbar-nav > li:hover > a {
+    padding-bottom: 14px;
+    box-sizing: border-box;
+    background: white;
+    border-bottom: 1px solid #03A9F4;
+    color: #03A9F4; }
+  .navbar .navbar-nav > li:hover .dropdown-menu {
+    display: block; }
+    .navbar .navbar-nav > li:hover .dropdown-menu a {
+      transition: all 0.2s ease; }
+      .navbar .navbar-nav > li:hover .dropdown-menu a:hover {
+        border-left: 3px solid #03A9F4;
+        background: white;
+        font-size: 14px;
+        padding-left: 25px; }
+
 .testp {
   background-color: #4CAF50; }
 
