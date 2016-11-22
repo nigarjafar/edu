@@ -1,6 +1,10 @@
+@import 'partials/_fonts.scss';
 @import 'partials/_example.scss';
 @import 'partials/_variables.scss';
 @import 'partials/_commonClasses.scss';
+@import 'partials/_mixins.scss';
+@import 'partials/_navbar.scss';
+@import 'partials/_footer.scss';
 
 .testp{
   background-color: $green;
