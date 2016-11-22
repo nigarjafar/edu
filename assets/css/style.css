@@ -1,6 +1,41 @@
 .testh {
   font-size: 50px; }
 
+body {
+  background-color: #EEF1F4; }
+
+.button-custom {
+  border: 1px solid #03A9F4;
+  color: #03A9F4;
+  padding: 3px 6px;
+  transition: all 0.4s ease; }
+  .button-custom:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #03A9F4; }
+
+.category-section, .right-bar {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 0px #cfd7e0; }
+  .category-section .heading, .right-bar .heading {
+    border-bottom: 2px solid #EEF1F4;
+    padding: 15px 0 15px; }
+    .category-section .heading h3, .right-bar .heading h3 {
+      margin: 2px 0;
+      float: left; }
+    .category-section .heading a, .right-bar .heading a {
+      float: right; }
+  .category-section .body, .right-bar .body {
+    padding: 15px 0; }
+
+.right-bar .heading {
+  border: none;
+  padding-bottom: 0; }
+  .right-bar .heading h3 {
+    border-bottom: 1px solid #03A9F4;
+    padding-bottom: 15px; }
+
 .testp {
   background-color: #4CAF50; }
 
