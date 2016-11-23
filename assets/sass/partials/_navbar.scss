@@ -2,7 +2,7 @@
   background: white;
   a{
     color: darken($background-color,60%);
-    font-weight:bold;
+    font-weight:bold !important;
   }
 
   .input-group{
@@ -15,7 +15,7 @@
       box-shadow: none;
       width:0px;
     }
-    
+
   }
 
   .navbar-nav{

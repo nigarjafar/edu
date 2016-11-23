@@ -1,6 +1,14 @@
 @font-face {
   font-family: Lato;
   src: url(../fonts/Lato/Lato-regular.ttf); }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Light.ttf);
+  font-weight: lighter; }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+  font-weight: bold; }
 .testh {
   font-size: 50px; }
 
@@ -57,11 +65,17 @@ input[type="text"] {
     border-bottom: 1px solid #03A9F4;
     padding-bottom: 15px; }
 
+.green-border {
+  border-bottom: 4px solid #4CAF50; }
+
+.red-border {
+  border-bottom: 4px solid #F44336; }
+
 .navbar {
   background: white; }
   .navbar a {
     color: #45586b;
-    font-weight: bold; }
+    font-weight: bold !important; }
   .navbar .input-group {
     margin-left: 20px;
     margin-top: 10px;
@@ -101,7 +115,7 @@ input[type="text"] {
       color: white; }
     #footer #info-footer div p {
       color: white;
-      font-weight: 400; }
+      font-weight: lighter; }
 #footer #copyright {
   background: #222222; }
   #footer #copyright div {
@@ -122,6 +136,47 @@ input[type="text"] {
       background-color: #03A9F4;
       color: white; }
 
+#category {
+  font-family: Lato; }
+  #category .col-md-4 {
+    padding: 15px; }
+    #category .col-md-4 .post-item {
+      background-color: white;
+      padding: 15px;
+      -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75); }
+      #category .col-md-4 .post-item .post-item-image img {
+        width: 100%; }
+      #category .col-md-4 .post-item .post-item-desc {
+        padding: 15px 0 15px 0; }
+        #category .col-md-4 .post-item .post-item-desc a {
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 22px; }
+      #category .col-md-4 .post-item .post-item-action .col-md-4 {
+        padding: 0; }
+      #category .col-md-4 .post-item .post-item-action li {
+        opacity: .5;
+        transition-duration: .4s; }
+        #category .col-md-4 .post-item .post-item-action li i {
+          font-size: 16px;
+          vertical-align: text-bottom; }
+        #category .col-md-4 .post-item .post-item-action li span, #category .col-md-4 .post-item .post-item-action li a {
+          font-size: 12px; }
+        #category .col-md-4 .post-item .post-item-action li a {
+          text-overflow: ellipsis;
+          width: 4em;
+          text-decoration: none;
+          color: black; }
+          #category .col-md-4 .post-item .post-item-action li a i {
+            margin-right: 4px; }
+      #category .col-md-4 .post-item .post-item-action li:hover {
+        opacity: 1; }
+
+@media (max-width: 992px) {
+  #category .row .post-item {
+    height: auto; } }
 .testp {
   background-color: #4CAF50; }
 
