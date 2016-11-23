@@ -1,33 +1,30 @@
 $(document).ready(function(){
 //Search button
 
-
+  //resizeElements();
 
 // RESIZING all post-items
   $(window).resize(function(){
-    if(window.width > 993)
-      resizeElements();
-    else
-      $(".post-item").each(function(){
-        $(this).height(auto);
-      })
+      //resizeElements();
   })
 
-  $(function resizeElements(){
-    $("#category > .row").each(function(){
-      var maxHeight=0;
-      // console.log("isledi");
-      $(this).find(".post-item").each(function(){
-        if($(this).height() > maxHeight)
-        maxHeight = $(this).height();
-      });
+  function resizeElements(){
+    if($(window).width() > 993){
+      $("#category > .row").each(function(){
+        var maxHeight=0;
+        console.log("isledi");
+        $(this).find(".post-item").each(function(){
+          if($(this).height() > maxHeight)
+          maxHeight = $(this).height();
+        });
 
-      $(this).find(".post-item").each(function(){
-        $(this).height(maxHeight);
-      });
+        $(this).find(".post-item").each(function(){
+          $(this).height(maxHeight);
+        });
 
-    });
-  })
+      });
+    }
+  }
 // End of resizing all post-items
 
 // MENU

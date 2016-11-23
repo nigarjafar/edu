@@ -65,10 +65,18 @@ input[type="text"]{
   }
 }
 
-.green-border{
+.green-border-bottom{
   border-bottom:4px solid $green;
 }
 
-.red-border{
+.red-border-bottom{
   border-bottom:4px solid $red;
+}
+
+.add-reminder{ // Item containing this class should be in relative position
+  color:lightgray;
+  cursor:pointer;
+  position: absolute;;
+  top:5px;
+  right:5px;
 }
