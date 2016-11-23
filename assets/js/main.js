@@ -1,4 +1,7 @@
 $(document).ready(function(){
+//Search button
+
+
 
 // RESIZING all post-items
   $(window).resize(function(){

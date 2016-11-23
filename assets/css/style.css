@@ -1,6 +1,14 @@
 @font-face {
   font-family: Lato;
   src: url(../fonts/Lato/Lato-regular.ttf); }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Light.ttf);
+  font-weight: lighter; }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+  font-weight: bold; }
 .testh {
   font-size: 50px; }
 
@@ -67,7 +75,7 @@ input[type="text"] {
   background: white; }
   .navbar a {
     color: #45586b;
-    font-weight: bold; }
+    font-weight: bold !important; }
   .navbar .input-group {
     margin-left: 20px;
     margin-top: 10px;
@@ -107,7 +115,7 @@ input[type="text"] {
       color: white; }
     #footer #info-footer div p {
       color: white;
-      font-weight: 400; }
+      font-weight: lighter; }
 #footer #copyright {
   background: #222222; }
   #footer #copyright div {
