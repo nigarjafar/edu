@@ -1,14 +1,14 @@
 @font-face {
   font-family: Lato;
-  src: url(../fonts/Lato/Lato-regular.ttf); }
-@font-face {
-  font-family: Lato;
   src: url(../fonts/Lato/Lato-Light.ttf);
   font-weight: lighter; }
 @font-face {
   font-family: Lato;
   src: url(../fonts/Lato/Lato-Bold.ttf);
   font-weight: bold; }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-regular.ttf); }
 .testh {
   font-size: 50px; }
 
@@ -33,36 +33,19 @@ input[type="text"] {
   font-family: 'Lato', sans-serif; }
 
 .button-custom {
-  border: 1px solid #03A9F4;
-  color: #03A9F4;
-  padding: 3px 6px;
-  transition: all 0.4s ease; }
+  background-color: #03A9F4;
+  color: white;
+  padding: 4px 8px;
+  transition: all 0.4s ease;
+  border-radius: 2px;
+  font-size: 0.9em; }
   .button-custom:hover {
     text-decoration: none;
     color: white;
-    background-color: #03A9F4; }
+    background-color: #0288D1; }
 
-.category-section, .right-bar {
-  background-color: white;
-  border-radius: 2px;
-  box-shadow: 1px 1px 3px 0px #cfd7e0; }
-  .category-section .heading, .right-bar .heading {
-    border-bottom: 2px solid #EEF1F4;
-    padding: 15px 0 15px; }
-    .category-section .heading h3, .right-bar .heading h3 {
-      margin: 2px 0;
-      float: left; }
-    .category-section .heading a, .right-bar .heading a {
-      float: right; }
-  .category-section .body, .right-bar .body {
-    padding: 15px 0; }
-
-.right-bar .heading {
-  border: none;
-  padding-bottom: 0; }
-  .right-bar .heading h3 {
-    border-bottom: 1px solid #03A9F4;
-    padding-bottom: 15px; }
+.vertical-div {
+  height: 30px; }
 
 .green-border-bottom {
   border-bottom: 4px solid #4CAF50; }
@@ -78,9 +61,10 @@ i.material-icons {
   vertical-align: text-bottom; }
 
 .navbar {
-  background: white; }
+  background: white;
+  margin: 0; }
   .navbar a {
-    color: #45586b;
+    color: #263241;
     font-weight: bold !important; }
   .navbar .input-group {
     margin-left: 20px;
@@ -201,6 +185,70 @@ i.material-icons {
 @media (max-width: 992px) {
   #category .row .post-item {
     height: auto; } }
+.category-section, .right-bar {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 0px #cfd7e0; }
+  .category-section .heading, .right-bar .heading {
+    border-bottom: 2px solid #EEF1F4;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .category-section .heading h3, .right-bar .heading h3 {
+      margin: 2px 0;
+      font-weight: bold; }
+  .category-section .body, .right-bar .body {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .category-section .body h2, .right-bar .body h2 {
+      font-weight: bold;
+      color: #263241;
+      text-align: justify; }
+    .category-section .body p, .right-bar .body p {
+      font-size: 0.8em;
+      margin: 15px 0;
+      color: gray;
+      text-align: justify; }
+    .category-section .body span, .right-bar .body span {
+      font-size: 0.85em;
+      font-weight: lighter;
+      color: #666666; }
+    .category-section .body span.date, .right-bar .body span.date {
+      font-style: italic; }
+    .category-section .body .big-post h2, .right-bar .body .big-post h2 {
+      margin: 15px 0;
+      font-size: 1.1em; }
+    .category-section .body .big-post .img-box, .right-bar .body .big-post .img-box {
+      height: 220px;
+      overflow: hidden; }
+      .category-section .body .big-post .img-box img, .right-bar .body .big-post .img-box img {
+        width: 100%; }
+    .category-section .body .small-post h2, .right-bar .body .small-post h2 {
+      margin: 7.5px 0;
+      font-size: 0.9em; }
+    .category-section .body .small-post .img-box, .right-bar .body .small-post .img-box {
+      padding-right: 0;
+      height: 70px;
+      overflow: hidden; }
+      .category-section .body .small-post .img-box img, .right-bar .body .small-post .img-box img {
+        width: 100%; }
+    .category-section .body .border, .right-bar .body .border {
+      height: 1px;
+      background: #EEF1F4;
+      margin: 15px 0; }
+
+.right-bar .heading {
+  border: none;
+  padding-bottom: 0; }
+  .right-bar .heading h3 {
+    border-bottom: 1px solid #03A9F4;
+    padding-bottom: 15px; }
+
+.advertisement-md-8 {
+  height: 90px;
+  overflow: hidden; }
+  .advertisement-md-8 img {
+    width: 100%; }
+
 .testp {
   background-color: #4CAF50; }
 
