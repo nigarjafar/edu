@@ -1,31 +1,45 @@
 $(document).ready(function(){
 //Search button
 
-  //resizeElements();
+// ACTIONS pop-up
+$(".post-item .post-item-image").mouseenter(function(){
+  var height = $(this).find("img").height();
+  $(this).find("img, .post-item-actions").stop(true,false).animate({
+    top: "-"+height+"px",
+  },300);
+})
 
-// RESIZING all post-items
-  $(window).resize(function(){
-      //resizeElements();
-  })
+$(".post-item .post-item-image").mouseleave(function(){
+  $(this).find("img, .post-item-actions").stop(true,false).animate({
+    top: "0px",
+  },200);
+})
 
-  function resizeElements(){
-    if($(window).width() > 993){
-      $("#category > .row").each(function(){
-        var maxHeight=0;
-        console.log("isledi");
-        $(this).find(".post-item").each(function(){
-          if($(this).height() > maxHeight)
-          maxHeight = $(this).height();
-        });
-
-        $(this).find(".post-item").each(function(){
-          $(this).height(maxHeight);
-        });
-
-      });
-    }
-  }
-// End of resizing all post-items
+//   //resizeElements();
+//
+// // RESIZING all post-items
+//   $(window).resize(function(){
+//       //resizeElements();
+//   })
+//
+//   function resizeElements(){
+//     if($(window).width() > 993){
+//       $("#category > .row").each(function(){
+//         var maxHeight=0;
+//         console.log("isledi");
+//         $(this).find(".post-item").each(function(){
+//           if($(this).height() > maxHeight)
+//           maxHeight = $(this).height();
+//         });
+//
+//         $(this).find(".post-item").each(function(){
+//           $(this).height(maxHeight);
+//         });
+//
+//       });
+//     }
+//   }
+// // End of resizing all post-items
 
 // MENU
 var check=true;

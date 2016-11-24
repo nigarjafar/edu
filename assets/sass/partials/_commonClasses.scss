@@ -2,7 +2,7 @@ body{
   background-color: $background-color;
 }
 a,p,h1,h2,h3,h4,h5,h6,span{
-    font-family: 'Lato', sans-serif;font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 h3{
   font-size:1.2em;
@@ -74,9 +74,10 @@ input[type="text"]{
 }
 
 .add-reminder{ // Item containing this class should be in relative position
-  color:lightgray;
+  color:darkgray;
   cursor:pointer;
-  position: absolute;;
-  top:5px;
-  right:5px;
+}
+
+i.material-icons{
+  vertical-align:text-bottom;
 }
