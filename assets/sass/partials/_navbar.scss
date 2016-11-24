@@ -1,7 +1,8 @@
 .navbar{
   background: white;
+  margin:0;
   a{
-    color: darken($background-color,60%);
+    color: $heading-color;
     font-weight:bold !important;
   }
 
