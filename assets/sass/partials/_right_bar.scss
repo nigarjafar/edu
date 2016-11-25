@@ -1,0 +1,27 @@
+
+.right-bar{
+  @extend .category-section;
+  margin-right: -15px;
+  margin-left:0;
+  .heading{
+    border:none;
+    padding-bottom:0;
+    h3{
+      display: inline-block;
+      padding-right:10px;
+      border-bottom: 2px solid $primaryColor;
+      padding-bottom:$padding-vertical-in;
+    }
+  }
+}
+
+#login{
+  form{
+    input{
+      padding:7px 10px;
+      margin:5px 0;
+      border:1px solid $background-color;
+    }
+  }
+
+}
