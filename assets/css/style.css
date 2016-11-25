@@ -29,7 +29,7 @@ p {
   font-size: 0.9em;
   letter-spacing: 1px; }
 
-input[type="text"] {
+input[type="text"], input[type="password"], input[type="submit"], input[type="email"] {
   font-family: 'Lato', sans-serif; }
 
 .button-custom {
@@ -186,6 +186,7 @@ i.material-icons {
   #category .row .post-item {
     height: auto; } }
 .category-section, .right-bar {
+  margin-right: 0px;
   background-color: white;
   border-radius: 2px;
   box-shadow: 1px 1px 3px 0px #cfd7e0; }
@@ -236,18 +237,29 @@ i.material-icons {
       background: #EEF1F4;
       margin: 15px 0; }
 
-.right-bar .heading {
-  border: none;
-  padding-bottom: 0; }
-  .right-bar .heading h3 {
-    border-bottom: 1px solid #03A9F4;
-    padding-bottom: 15px; }
-
 .advertisement-md-8 {
   height: 90px;
+  margin-right: 0px;
   overflow: hidden; }
   .advertisement-md-8 img {
     width: 100%; }
+
+.right-bar {
+  margin-right: -15px;
+  margin-left: 0; }
+  .right-bar .heading {
+    border: none;
+    padding-bottom: 0; }
+    .right-bar .heading h3 {
+      display: inline-block;
+      padding-right: 10px;
+      border-bottom: 2px solid #03A9F4;
+      padding-bottom: 15px; }
+
+#login form input {
+  padding: 7px 10px;
+  margin: 5px 0;
+  border: 1px solid #EEF1F4; }
 
 .testp {
   background-color: #4CAF50; }
