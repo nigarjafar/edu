@@ -1,6 +1,9 @@
 .navbar{
   background: white;
+  border-radius: 0;
+  border-bottom:1px solid lightgray;
   margin:0;
+  opacity:1;
   a{
     color: $heading-color;
     font-weight:bold !important;
@@ -9,12 +12,14 @@
   .input-group{
     margin-left:20px;
     margin-top:10px;
-    width:20px;
+    width:80px;
 
     input{
       border:none;
       box-shadow: none;
-      width:0px;
+      border-radius: 0;
+      width:67px;
+      border-left:1px solid gray;
     }
 
   }
@@ -26,7 +31,7 @@
         transition-property: color,border;
       }
       ul{
-        box-shadow: none;
+        //box-shadow: none;
         border-radius: 0;
         border:none;
       }
@@ -45,7 +50,6 @@
           display:block;
           a{
             transition:all 0.2s ease;
-              //transition-property:border-color;
             &:hover{
               border-left:3px solid $primaryColor;
               background:white;

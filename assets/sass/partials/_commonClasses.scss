@@ -55,3 +55,12 @@ input[type="text"],input[type="password"],input[type="submit"],input[type="email
 i.material-icons{
   vertical-align:text-bottom;
 }
+
+.border{
+  height:1px;
+  background: $background-color;
+  margin:$padding-vertical-in 0;
+}
+#content{
+  margin-top:50px;
+}
