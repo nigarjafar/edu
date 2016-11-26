@@ -53,12 +53,23 @@ input[type="text"], input[type="password"], input[type="submit"], input[type="em
 .red-border-bottom {
   border-bottom: 4px solid #F44336; }
 
-.add-reminder {
+.add-reminder i {
   color: darkgray;
   cursor: pointer; }
 
 i.material-icons {
   vertical-align: text-bottom; }
+
+#popUp {
+  z-index: 999;
+  display: none;
+  padding: 50px;
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%;
+  position: fixed;
+  background-color: lightgray; }
 
 .navbar {
   background: white;
@@ -128,62 +139,58 @@ i.material-icons {
 
 #category {
   font-family: Lato; }
-  #category .row .col-md-4 {
+  #category .col-md-4 {
     padding: 15px; }
-    #category .row .col-md-4 .post-item {
+    #category .col-md-4 .post-item {
       position: relative;
       background-color: white;
       padding: 15px;
       -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75); }
-      #category .row .col-md-4 .post-item .post-item-image {
+      #category .col-md-4 .post-item .post-item-image {
         width: 100%;
         height: 165px;
         position: relative;
         overflow: hidden; }
-        #category .row .col-md-4 .post-item .post-item-image .post-item-actions {
+        #category .col-md-4 .post-item .post-item-image .post-item-actions {
           padding-top: 65px;
           width: 100%;
           height: 165px;
           position: relative;
           background-color: white; }
-          #category .row .col-md-4 .post-item .post-item-image .post-item-actions ul {
+          #category .col-md-4 .post-item .post-item-image .post-item-actions ul {
             text-align: center; }
-            #category .row .col-md-4 .post-item .post-item-image .post-item-actions ul li {
+            #category .col-md-4 .post-item .post-item-image .post-item-actions ul li {
               cursor: pointer; }
-        #category .row .col-md-4 .post-item .post-item-image img {
+        #category .col-md-4 .post-item .post-item-image img {
           top: 0px;
           position: relative;
-          height: 165px;
-          width: 100%; }
-      #category .row .col-md-4 .post-item .post-item-desc {
+          min-height: 165px;
+          max-width: 100%; }
+      #category .col-md-4 .post-item .post-item-desc {
         padding: 15px 0 15px 0; }
-        #category .row .col-md-4 .post-item .post-item-desc a {
+        #category .col-md-4 .post-item .post-item-desc a {
           text-decoration: none;
           font-size: 16px;
           line-height: 22px; }
-      #category .row .col-md-4 .post-item .post-item-details {
-        position: absolute;
-        bottom: 10px;
-        left: 15px; }
-        #category .row .col-md-4 .post-item .post-item-details li {
-          opacity: .5;
-          transition-duration: .4s; }
-          #category .row .col-md-4 .post-item .post-item-details li i {
-            font-size: 16px; }
-          #category .row .col-md-4 .post-item .post-item-details li span, #category .row .col-md-4 .post-item .post-item-details li a {
-            font-size: 12px; }
-          #category .row .col-md-4 .post-item .post-item-details li a {
-            text-decoration: none;
-            color: black; }
-            #category .row .col-md-4 .post-item .post-item-details li a i {
-              margin-right: 4px; }
-        #category .row .col-md-4 .post-item .post-item-details li:hover {
-          opacity: 1; }
+      #category .col-md-4 .post-item .post-item-details li {
+        opacity: .5;
+        transition-duration: .4s; }
+        #category .col-md-4 .post-item .post-item-details li i {
+          font-size: 16px; }
+        #category .col-md-4 .post-item .post-item-details li span, #category .col-md-4 .post-item .post-item-details li a {
+          font-size: 12px; }
+        #category .col-md-4 .post-item .post-item-details li a {
+          text-decoration: none;
+          color: black; }
+          #category .col-md-4 .post-item .post-item-details li a i {
+            margin-right: 4px; }
+      #category .col-md-4 .post-item .post-item-details li:hover {
+        opacity: 1; }
 
 @media (max-width: 992px) {
-  #category .row .post-item {
+  #category .post-item {
     height: auto; } }
 .category-section, .right-bar {
   margin-right: 0px;

@@ -47,11 +47,23 @@ input[type="text"],input[type="password"],input[type="submit"],input[type="email
   border-bottom:4px solid $red;
 }
 
-.add-reminder{ // Item containing this class should be in relative position
+.add-reminder i{ // Item containing this class should be in relative position
   color:darkgray;
   cursor:pointer;
 }
 
 i.material-icons{
   vertical-align:text-bottom;
+}
+
+#popUp{
+  z-index:999;
+  display:none;
+  padding:50px;
+  width:30%;
+  height:30%;
+  top:35%;
+  left:35%;
+  position:fixed;
+  background-color: lightgray;
 }

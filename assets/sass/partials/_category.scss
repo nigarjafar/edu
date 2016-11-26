@@ -32,9 +32,9 @@
           img{
             top:0px;
             position: relative;
-            height: 165px;
-            //min-width:100%;
-            width:100%;
+            min-height: 165px;
+            max-width:100%;
+            //width:100%;
           }
         }
         .post-item-desc{
@@ -46,9 +46,9 @@
           }
         }
         .post-item-details{
-          position:absolute;
-          bottom:10px;
-          left:15px;
+          // position:absolute;
+          // bottom:10px;
+          // left:15px;
           li{
             opacity:.5;
             transition-duration:.4s;
