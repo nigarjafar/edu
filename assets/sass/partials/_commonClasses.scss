@@ -15,6 +15,9 @@ p{
   font-size: 0.9em;
   letter-spacing: 1px;
 }
+ul{
+  font-family:'Lato',sans-serif;
+}
 input[type="text"],input[type="password"],input[type="submit"],input[type="email"]{
   font-family: 'Lato', sans-serif;
 }
@@ -74,4 +77,19 @@ i.material-icons{
 }
 #content{
   margin-top:50px;
+}
+
+.custom-badge{
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: super;
+  background-color: lighten(#777,10%);
+  border-radius: 10px;
 }
