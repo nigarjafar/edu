@@ -1,4 +1,5 @@
 
+//Right bar common properties
 .right-bar{
   @extend .category-section;
   margin-right: -15px;
@@ -8,7 +9,6 @@
     padding-bottom:0;
     h3{
       display: inline-block;
-      padding-right:10px;
       border-bottom: 2px solid $primaryColor;
       padding-bottom:$padding-vertical-in;
     }
@@ -19,9 +19,88 @@
   form{
     input{
       padding:7px 10px;
-      margin:5px 0;
-      border:1px solid $background-color;
+      margin:$padding-vertical-in/2 0;
+      border:1px solid $background-color
+    }
+  }
+}
+
+.advertisement-md-4{
+    background:white;
+    padding-top: $padding-vertical-in;
+    padding-bottom: $padding-vertical-in;
+    overflow:hidden;
+    img{
+      width:100%;
     }
   }
 
-}
+  #followUs{
+    i{
+      width:50px;
+      height:50px;
+      color:white;
+      padding-top:18px;
+    }
+    .fa-facebook{
+      background: #3D62B3
+    }
+    .fa-twitter{
+      background: #55ACEE
+    }
+    span:first-child{
+      font-size:1.6em;
+      display:block;
+      margin-top:5px;
+    }
+    span:last-child{
+      color:lighten($heading-color,30%);
+      font-style: italic;
+    }
+  }
+
+  #companies{
+    .img-box{
+      height:65px;
+      overflow:hidden;
+      img{
+        width:100%;
+      }
+    }
+    a:first-child{
+      font-size:1.05em;
+      display:block;
+      margin: 7px 0px 14px;
+      color:$heading-color;
+      &:hover{
+        color:lighten($heading-color,20%);
+      }
+    }
+  }
+
+  #rightBarPosts{
+    .img-box{
+      height:65px;
+      overflow:hidden;
+      img{
+        width:100%;
+      }
+    }
+    .post-heading{
+      font-size:0.9em;
+      display:block;
+      margin: 7px 0px;
+      font-weight: bold;
+      color:$heading-color;
+      &:hover{
+        color:lighten($heading-color,20%);
+      }
+    }
+    .company,i{
+      font-size:0.7em;
+      color:lighten($heading-color,30%);
+    }
+    i{
+      font-size:0.8em;
+    }
+  }

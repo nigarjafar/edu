@@ -67,3 +67,11 @@ i.material-icons{
   position:fixed;
   background-color: lightgray;
 }
+.border{
+  height:1px;
+  background: $background-color;
+  margin:$padding-vertical-in 0;
+}
+#content{
+  margin-top:50px;
+}
