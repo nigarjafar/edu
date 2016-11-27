@@ -88,22 +88,34 @@ function alignItems(){
 // End of resizing all post-items
 
 // MENU
-var check=true;
-  $(".button-search").click(function(){
-    if(check){
+
+  $("body").click(function(event){
+      console.log(event.target.id)
+      if(event.target.id!="input-search"){
+      $(".navbar .input-group").stop().animate({
+      width:"80px"},650);
+      $("#input-search").stop().animate({
+      width:"67px"},650);
+      }
+
+  })
+  $("#input-search").focus(function(){
       $(".navbar .input-group").stop().animate({
       width:"220px"},650);
-      $(".navbar .input-group input").stop().animate({
+      $("#input-search").stop().animate({
       width:"200px"},650);
-      check=false;
-    }
-    else{
+    });
+
+  $(".button-search").click(function(){
       $(".navbar .input-group").stop().animate({
-      width:"20px"},650);
-      $(".navbar .input-group input").stop().animate({
-      width:0},650);
-      check=true;
-    }
-  });
+      width:"80px"},650);
+      $("#input-search").stop().animate({
+      width:"67px"},650);
+
+  })
+
+
+
+
 // end of menu
 });
