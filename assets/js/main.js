@@ -87,10 +87,9 @@ function alignItems(){
 // console.log("N: "+(n)+" cH: "+cH+" maxH: "+maxH+" cDist: "+cDist+" dist: "+dist);
 // End of resizing all post-items
 
-// MENU
+// Search
 
   $("body").click(function(event){
-      console.log(event.target.id)
       if(event.target.id!="input-search"){
       $(".navbar .input-group").stop().animate({
       width:"80px"},650);
@@ -118,4 +117,30 @@ function alignItems(){
 
 
 // end of menu
+
+//Collapse-menu
+
+$("#navbar-collapse .navbar-nav li").click(function(){
+  //check if dropdown menu is open or closed
+  var check= $(this).find(".dropdown-menu").css("display")!="block"
+  $("#navbar-collapse .navbar-nav li .dropdown-menu").css("display","none")
+  if(check)
+    $(this).find(".dropdown-menu").css("display","block")
+//if li has an dropdown-menu, preventDefault(href)
+  if($(this).find(".dropdown-menu").length)
+    event.preventDefault();
+})
+$("#collapse-button").click(function(){
+  console.log($("#navbar-collapse").css("left"))
+  //check if dropdown menu is open or closed
+  if($("#navbar-collapse").css("left")=="-200px"){
+    $("#navbar-collapse").css("left","0px")
+    console.log("if")
+  }
+  else{
+    $("#navbar-collapse").css("left","-200px")
+    console.log("else")
+  }
+
+})
 });
