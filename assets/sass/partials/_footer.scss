@@ -13,12 +13,12 @@
     }
   }
   #copyright{
-    background: #222222;
+    background: $footer-color;
     div{
       padding:$padding-vertical-out/2 0;
       h6{
         padding-top:8px;
-        color:lighten(#222222, 40%);
+        color:lighten($footer-color, 40%);
       }
 
       a{
@@ -28,8 +28,8 @@
           padding:7px 0;
           margin:0 4px;
           border-radius:1px;
-          background-color:lighten(#222222, 15%);
-          color:lighten(#222222, 40%);
+          background-color:lighten($footer-color, 15%);
+          color:lighten($footer-color, 40%);
           transition:all 0.5s ease;
         }
         &:hover{

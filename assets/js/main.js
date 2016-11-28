@@ -46,10 +46,9 @@ $(".add-reminder").click(function(e){
 
 // End of resizing all post-items
 
-// MENU
+// Search
 
   $("body").click(function(event){
-      console.log(event.target.id)
       if(event.target.id!="input-search"){
       $(".navbar .input-group").stop().animate({
       width:"80px"},650);
@@ -77,4 +76,45 @@ $(".add-reminder").click(function(e){
 
 
 // end of menu
+
+//Collapse-menu
+
+$("#navbar-collapse .navbar-nav li a").click(function(){
+  //check if dropdown menu is open or closed
+  console.log( $(this))
+  var check= $(this).parent().find(".dropdown-menu").css("display")!="block"
+  $("#navbar-collapse .navbar-nav li .dropdown-menu").slideUp()
+  if(check)
+    $(this).parent().find(".dropdown-menu").slideDown();
+//if li has an dropdown-menu, preventDefault(href)
+  if($(this).parent().find(".dropdown-menu").length)
+    event.preventDefault();
+})
+
+
+//Collapse menu open/close
+$("#collapse-button").click(function(){
+  if($("#navbar-collapse").css("left")=="-200px"){
+    $("#navbar-collapse").animate({ left:"0px"},500);
+  }
+  else{
+  $("#navbar-collapse").animate({ left:"-200px"},500);
+  }
+})
+
+//width 975
+console.log($(window).width())
+NavbarCollapse();
+
 });
+
+$(window).resize(NavbarCollapse());
+
+function NavbarCollapse(){
+  if( $(window).width() <995 ){
+    $("#navbar").prop("id","navbar-collapse")
+  }
+  else{
+    $("#navbar-collapse").prop("id","navbar")
+  }
+}
