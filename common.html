@@ -17,10 +17,20 @@
       <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-      <button class="collapse-button">
-        <i class="material-icons">menu</i>
-      </button>
-      <nav id="navbar-collapse" class="navbar navbar-fixed-top">
+      <div id="top-collapse" class="collapse-only container-fluid">
+        <div class="container">
+          <div class="row">
+          <div class="col-sm-4 col-xs-4">
+            <button id="collapse-button" class="collapse-only">
+               <i class="material-icons">menu</i>
+            </button>
+          </div>
+          <div class="col-sm-4 col-xs-4 text-center"><a  href="#" >Educive.com</a></div>
+          <div class="col-sm-4 col-xs-4 text-right"><a href="#">Login</a></div>
+        </div>
+        </div>
+      </div>
+      <nav id="navbar" class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#" style="color:black">Educive.com</a>
@@ -67,8 +77,6 @@
               </li>
               <li><a href="#">Grants</a></li>
               <li><a href="https://getbootstrap.com/examples/navbar/">Contact Us</a></li>
-              <li class="divider"></li>
-              <li class="collapse-only"><a href="#">Login</a></li>
             </ul>
 
           </div><!-- /.navbar-collapse -->
