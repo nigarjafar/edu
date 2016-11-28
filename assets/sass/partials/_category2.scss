@@ -1,6 +1,12 @@
-#category{
+#category, #company{
   font-family: Lato;
-  .col-md-4{
+  .col-md-12{
+    padding:20px 15px;
+    h2{
+      font-size:30px;
+    }
+  }
+  .col-md-4, .col-md-6{
     padding:$padding-vertical-in;
     .post-item{
       //height:335px;
