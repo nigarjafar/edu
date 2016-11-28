@@ -19,12 +19,34 @@
     </head>
     <body>
     <div class="main-wrapper">
-      <nav class="navbar">
+      <nav id="top-bar" class="navbar navbar-fixed-top">
+        <div class="container">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div>
+            <ul class="nav navbar-nav navbar-left">
+              <li style="margin-left:-15px;"><a href="#" >Name</a></li>
+              <li><a href="#">Add New Post</a></li>
+              <li><a href="#">View Your Posts</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Log out</a></li>
+            </ul>
+
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <nav id="navbar" class="navbar navbar-fixed-top" style="top:39px">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#" style="color:black">Educive.com</a>
           </div>
-
+          <div class="input-group  pull-right">
+            <input type="text" id="input-search" class="form-control  pull-right" placeholder="Search for...">
+            <span class="input-group-btn">
+              <a class="button-search" href="#"><i class="material-icons">search</i></a>
+            </span>
+          </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div>
             <ul class="nav navbar-nav navbar-right">
@@ -55,16 +77,17 @@
                 </ul>
               </li>
               <li><a href="#">Grants</a></li>
-
+              <li><a href="#">Contact Us</a></li>
             </ul>
+
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
 
       <section id="company" class="container">
 
-        <div class="col-md-8">
-          <div class="col-md-6 col-xs-12 col-sm-6">
+        <div class="col-md-8 col-sm-8">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item red-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image1.jpg">
@@ -94,7 +117,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item red-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image2.jpg">
@@ -124,7 +147,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item green-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image3.jpg">
@@ -154,7 +177,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item green-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image4.png">
@@ -184,7 +207,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item green-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/wallpaper.jpg">
@@ -214,7 +237,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item red-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image1.jpg">
@@ -244,7 +267,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item red-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image2.jpg">
@@ -274,7 +297,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item green-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image3.jpg">
@@ -304,7 +327,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item green-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/image4.png">
@@ -334,7 +357,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-6">
+          <div class="col-md-6 col-xs-12 col-sm-12">
             <div class="post-item green-border-bottom">
               <div class="post-item-image">
                 <img src="assets/images/wallpaper.jpg">
@@ -365,7 +388,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4">
 
         </div>
 

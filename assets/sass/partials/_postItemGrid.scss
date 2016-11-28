@@ -51,9 +51,9 @@
         }
       }
       .post-item-details{
-        // position:absolute;
-        // bottom:10px;
-        // left:15px;
+        position:absolute;
+        bottom:10px;
+      left:15px;
         li{
           opacity:.5;
           transition-duration:.4s;
@@ -78,11 +78,11 @@
     }
   }
 }
-
-@media (max-width:992px){
-#category{
-  .post-item{
-    height:auto;
-  }
-}
-}
+//
+// @media (max-width:992px){
+// #category{
+//   .post-item{
+//     height:auto;
+//   }
+// }
+// }

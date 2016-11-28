@@ -108,7 +108,7 @@ NavbarCollapse();
 
 });
 
-$(window).resize(NavbarCollapse());
+$(window).resize(NavbarCollapse);
 
 function NavbarCollapse(){
   if( $(window).width() <995 ){
@@ -118,3 +118,19 @@ function NavbarCollapse(){
     $("#navbar-collapse").prop("id","navbar")
   }
 }
+
+$(window).resize(function(){
+
+  $("#navbar-collapse .navbar-nav li a").click(function(){
+
+    console.log("collap")
+    //check if dropdown menu is open or closed
+    var check= $(this).parent().find(".dropdown-menu").css("display")!="block"
+    $("#navbar-collapse .navbar-nav li .dropdown-menu").slideUp()
+    if(check)
+      $(this).parent().find(".dropdown-menu").slideDown();
+  //if li has an dropdown-menu, preventDefault(href)
+    if($(this).parent().find(".dropdown-menu").length)
+      event.preventDefault();
+  })
+})

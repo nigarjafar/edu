@@ -17,14 +17,12 @@ $(document).ready(function(){
 
   function alignItems(){
 
-    console.log("align started");
-
-    if(h >= 992){
+    if(h >= 992)
       itemsInRow = 3;
-    }
-    else if(h >= 768){
+    else if(h >= 768)
       itemsInRow = 2;
-    }
+    else
+      return;
 
     for(var itemID=0;itemID<items;itemID++){
       //console.log(itemID+"--------------");
@@ -46,15 +44,12 @@ $(document).ready(function(){
         //console.log(itemID+" -> "+j);
       }
     }
-    console.log("align finished");
   }
 
   function makeHeightsAuto(){
-    console.log("--------auto started");
     for(var i=0;i<items;i++){
       itemHeight = $(".post-item:eq("+i+")").css("height","auto");
       //console.log("item: "+itemHeight+"max: "+maxHeight);
     }
-    console.log("--------auto finished");
   }
 });
