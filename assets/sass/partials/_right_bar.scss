@@ -2,8 +2,8 @@
 //Right bar common properties
 .right-bar{
   @extend .category-section;
-  margin-right: -15px;
   margin-left:0;
+
   .heading{
     border:none;
     padding-bottom:0;
@@ -33,6 +33,7 @@
     img{
       width:100%;
     }
+
   }
 
   #followUs{
@@ -61,11 +62,15 @@
 
   #companies{
     .img-box{
-      height:65px;
+      height:80px;
       overflow:hidden;
+      @media screen and (min-width: 576px) and (max-width: 768px) {
+        height:120px;
+      }
       img{
         width:100%;
       }
+
     }
     a:first-child{
       font-size:1.05em;
