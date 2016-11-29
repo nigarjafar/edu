@@ -90,28 +90,16 @@ $("#navbar-collapse .navbar-nav li a").click(function(){
     event.preventDefault();
 })
 
-
-
-//Collapse menu open/close
-// $("#collapse-button").click(function(){
-//   if($("#navbar-collapse").css("left")=="-200px"){
-//     $("#navbar-collapse").animate({ left:"0px"},500);
-//   }
-//   else{
-//   $("#navbar-collapse").animate({ left:"-200px"},500);
-//   }
-// })
-
-
-
-
+//Add button- navbar -collapse open/close
 ToggleCollapseNavbar();
+
+// Resize window-> Navbar collapsed
 NavbarCollapse();
 
 });
-
-$(window).resize( NavbarCollapse );
 $(window).resize( CloseCollapseNavbarWithoutEffect );
+$(window).resize( NavbarCollapse );
+
 
 function NavbarCollapse(){
   if( $("#top-collapse").css("display")!="none" ){
@@ -148,22 +136,8 @@ function CloseCollapseNavbar(){
 
 function CloseCollapseNavbarWithoutEffect(){
   $("body").css("left","0");
+  $("#navbar-collapse .dropdown-menu").slideUp();
   $("#top-collapse").css("left","0")
   $("#navbar-collapse").css("left","-200px")
+
 }
-
-$(window).resize(function(){
-
-  $("#navbar-collapse .navbar-nav li a").click(function(){
-
-    console.log("collap")
-    //check if dropdown menu is open or closed
-    var check= $(this).parent().find(".dropdown-menu").css("display")!="block"
-    $("#navbar-collapse .navbar-nav li .dropdown-menu").slideUp()
-    if(check)
-      $(this).parent().find(".dropdown-menu").slideDown();
-  //if li has an dropdown-menu, preventDefault(href)
-    if($(this).parent().find(".dropdown-menu").length)
-      event.preventDefault();
-  })
-})
