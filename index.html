@@ -34,10 +34,18 @@
       </div>
       <nav id="navbar-collapse" class="navbar navbar-fixed-top">
         <div class="container">
-          <div class="navbar-header full-nav-only">
-            <a class="navbar-brand" href="#" style="color:black">Educive.com</a>
+          <div class="navbar-header">
+            <a class="navbar-brand full-nav-only" href="#" style="color:black">Educive.com</a>
+            <!-- Search bar in collapse -->
+            <div id="collapse-search" class="input-group collapse-only">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="button-search"><i class="material-icons">search</i></button>
+              </span>
+            </div>
           </div>
-          <div class="input-group full-nav-only pull-right">
+          <!-- Search form for full navbar -->
+          <div id="full-nav-search" class="input-group full-nav-only pull-right">
             <input type="text" id="input-search" class="form-control  pull-right" placeholder="Search for...">
             <span class="input-group-btn">
               <a class="button-search" href="#"><i class="material-icons">search</i></a>
@@ -590,12 +598,14 @@
               <div class="heading col-md-12">
                   <h3>Login</h3>
               </div>
-              <div class="body col-md-12">
+              <div class="body col-md-12 text-center">
                 <form>
                   <input class="col-md-12" type="email" placeholder="Email">
                   <input class="col-md-12" type="password" placeholder="Password">
                   <input class="col-md-12 button-custom" type="submit" value="Login">
                 </form>
+                <div class="border"></div>
+                <span >Don't  have an account? </span> <a href="#">Sign Up!</a>
               </div>
             </section>
 

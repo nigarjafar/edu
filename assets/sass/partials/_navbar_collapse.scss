@@ -31,10 +31,12 @@
 #navbar-collapse{
   height:100vh;
   left:-200px;
-  top:45px;
-  background:#EEF1F4;
+  top:0px;
+  background:white;
+  box-shadow: inset -4px 0px 15px -5px rgba(122,110,104,1);;
   border-radius: 0;
   border-right: 1px solid lightgray;
+  padding-left:10px;
   a{
     color:$heading-color;
   }
@@ -53,7 +55,6 @@
       float:none !important;
       li{
         float:none;
-        background:#EEF1F4;
         .dropdown-menu{
           position:relative;
           border:none;
@@ -80,7 +81,30 @@
   .full-nav-only{
     display: none;
   }
-}
-body{
-  position:absolute;
+  #collapse-search{
+    margin:10px;
+    input{
+      border:1px solid $primaryColor;
+      border-right:none;
+      padding:6px;
+      font-size:1em;
+      height:40px;
+      border-radius: 2px;
+    }
+    button{
+      background: white;
+      border:1px solid $primaryColor;
+      border-left:none;
+      padding:6px;
+      height:40px;
+      border-radius: 2px
+      i{
+        color:$primaryColor;
+      }
+
+    }
+    input:focus, button:focus{
+      box-shadow: none;
+    }
+  }
 }

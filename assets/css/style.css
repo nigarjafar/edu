@@ -105,11 +105,11 @@ i.material-icons {
   #navbar a {
     color: #263241;
     font-weight: bold !important; }
-  #navbar .input-group {
+  #navbar #full-nav-search {
     margin-left: 20px;
     margin-top: 10px;
     width: 80px; }
-    #navbar .input-group input {
+    #navbar #full-nav-search input {
       border: none;
       box-shadow: none;
       border-radius: 0;
@@ -363,6 +363,10 @@ i.material-icons {
   padding: 7px 10px;
   margin: 7.5px 0;
   border: 1px solid #EEF1F4; }
+#login span, #login a {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 0.9em; }
 
 .advertisement-md-4 {
   background: white;
@@ -462,10 +466,12 @@ i.material-icons {
 #navbar-collapse {
   height: 100vh;
   left: -200px;
-  top: 45px;
-  background: #EEF1F4;
+  top: 0px;
+  background: white;
+  box-shadow: inset -4px 0px 15px -5px #7a6e68;
   border-radius: 0;
   border-right: 1px solid lightgray;
+  padding-left: 10px;
   width: 200px; }
   #navbar-collapse a {
     color: #263241; }
@@ -480,8 +486,7 @@ i.material-icons {
     #navbar-collapse .container ul {
       float: none !important; }
       #navbar-collapse .container ul li {
-        float: none;
-        background: #EEF1F4; }
+        float: none; }
         #navbar-collapse .container ul li .dropdown-menu {
           position: relative;
           border: none;
@@ -498,11 +503,31 @@ i.material-icons {
         height: 1px; }
   #navbar-collapse .full-nav-only {
     display: none; }
-
-body {
-  position: absolute; }
+  #navbar-collapse #collapse-search {
+    margin: 10px; }
+    #navbar-collapse #collapse-search input {
+      border: 1px solid #03A9F4;
+      border-right: none;
+      padding: 6px;
+      font-size: 1em;
+      height: 40px;
+      border-radius: 2px; }
+    #navbar-collapse #collapse-search button {
+      background: white;
+      border: 1px solid #03A9F4;
+      border-left: none;
+      padding: 6px;
+      height: 40px;
+      border-radius: 2px i;
+        border-radius-color: #03A9F4; }
+    #navbar-collapse #collapse-search input:focus, #navbar-collapse #collapse-search button:focus {
+      box-shadow: none; }
 
 .testp {
   background-color: #4CAF50; }
+
+body {
+  overflow-x: hidden;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
