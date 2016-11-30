@@ -108,8 +108,8 @@ i.material-icons {
   #navbar a {
     color: #263241;
     font-weight: bold !important; }
-  #navbar a:focus {
-    background: white; }
+  #navbar a:hover, #navbar a:focus {
+    background-color: white !important; }
   #navbar #full-nav-search {
     margin-left: 20px;
     margin-top: 10px;
@@ -537,14 +537,20 @@ i.material-icons {
       #navbar-collapse .container ul li {
         float: none; }
         #navbar-collapse .container ul li .dropdown-menu {
+          border-radius: 0;
           position: relative;
           border: none;
           padding: 0;
+          background: none;
           box-shadow: none; }
           #navbar-collapse .container ul li .dropdown-menu a {
             margin-left: 10px; }
-        #navbar-collapse .container ul li a:hover, #navbar-collapse .container ul li a:visited {
-          background: #EEF1F4; }
+        #navbar-collapse .container ul li a:hover {
+          color: #03A9F4;
+          font-weight: bold;
+          background: none; }
+        #navbar-collapse .container ul li a:focus {
+          background: none; }
       #navbar-collapse .container ul .divider {
         background: #555555;
         height: 1px; }
@@ -569,6 +575,12 @@ i.material-icons {
         border-radius-color: #03A9F4; }
     #navbar-collapse #collapse-search input:focus, #navbar-collapse #collapse-search button:focus {
       box-shadow: none; }
+
+.dropdown-menu-open {
+  display: block; }
+
+.dropdown-menu-close {
+  display: none; }
 
 #author .img-box {
   overflow: hidden;

@@ -56,20 +56,24 @@
       li{
         float:none;
         .dropdown-menu{
+          border-radius: 0;
           position:relative;
           border:none;
           padding:0;
+          background: none;
           box-shadow: none;
           a{
             margin-left:10px;
           }
         }
-        a:hover, a:visited{
-          background:#EEF1F4;
+        a:hover{
+          color:$primaryColor;
+          font-weight: bold;
+          background: none;
         }
-        // a:focus{
-        //   background:darken(#EEF1F4, 10%);
-        // }
+        a:focus{
+          background:none;
+        }
       }
       .divider{
         background: lighten($footer-color, 20%);
@@ -107,4 +111,10 @@
       box-shadow: none;
     }
   }
+}
+.dropdown-menu-open{
+  display:block;
+}
+.dropdown-menu-close{
+  display:none;
 }
