@@ -82,9 +82,9 @@ $(".add-reminder").click(function(e){
 $("#navbar-collapse .navbar-nav li a").click(function(){
   //check if dropdown menu is open or closed
   var check= $(this).parent().find(".dropdown-menu").css("display")!="block"
-  $("#navbar-collapse .navbar-nav li .dropdown-menu").slideUp()
+  $("#navbar-collapse .navbar-nav li .dropdown-menu").removeClass("dropdown-menu-open").addClass("dropdown-menu-close")
   if(check)
-    $(this).parent().find(".dropdown-menu").slideDown();
+    $(this).parent().find(".dropdown-menu").removeClass("dropdown-menu-close").addClass("dropdown-menu-open");
 //if li has an dropdown-menu, preventDefault(href)
   if($(this).parent().find(".dropdown-menu").length)
     event.preventDefault();
@@ -97,8 +97,10 @@ ToggleCollapseNavbar();
 NavbarCollapse();
 
 });
-$(window).resize( CloseCollapseNavbarWithoutEffect );
+
+
 $(window).resize( NavbarCollapse );
+$(window).resize( CloseCollapseNavbarWithoutEffect );
 
 
 function NavbarCollapse(){
@@ -123,7 +125,6 @@ function ToggleCollapseNavbar(){
 }
 
 function OpenCollapseNavbar(){
-
   $("body").animate({ left:"200px"},500);
   $("#top-collapse").animate({ left:"200px"},500);
   $("#navbar-collapse").animate({ left:"0px"},500);
@@ -133,10 +134,10 @@ function CloseCollapseNavbar(){
   $("#top-collapse").animate({ left:"0"},500);
   $("#navbar-collapse").animate({ left:"-200px"},500);
 }
-
+var i=0;
 function CloseCollapseNavbarWithoutEffect(){
   $("body").css("left","0");
-  $("#navbar-collapse .dropdown-menu").slideUp();
+  $("#navbar .navbar-nav li .dropdown-menu").removeClass("dropdown-menu-open")
   $("#top-collapse").css("left","0")
   $("#navbar-collapse").css("left","-200px")
 
