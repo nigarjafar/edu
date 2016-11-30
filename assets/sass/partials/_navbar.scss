@@ -8,6 +8,9 @@
     color: $heading-color;
     font-weight:bold !important;
   }
+  a:focus{
+    background:white;
+  }
 
   #full-nav-search{
     margin-left:20px;

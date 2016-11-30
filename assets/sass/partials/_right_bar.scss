@@ -94,6 +94,12 @@
       overflow:hidden;
       img{
         width:100%;
+        transition-duration: $img-anim-duration;
+      }
+      &:hover img{
+        -moz-transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
       }
     }
     .post-heading{

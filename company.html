@@ -19,29 +19,33 @@
     </head>
     <body>
     <div class="main-wrapper">
-      <nav id="top-bar" class="navbar navbar-fixed-top">
+      <div id="top-collapse" class="collapse-only container-fluid">
         <div class="container">
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div>
-            <ul class="nav navbar-nav navbar-left">
-              <li style="margin-left:-15px;"><a href="#" >Name</a></li>
-              <li><a href="#">Add New Post</a></li>
-              <li><a href="#">View Your Posts</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Log out</a></li>
-            </ul>
-
-
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <nav id="navbar" class="navbar navbar-fixed-top" style="top:39px">
+          <div class="row">
+          <div class="col-sm-4 col-xs-4">
+            <button id="collapse-button" class="collapse-only">
+               <i class="material-icons">menu</i>
+            </button>
+          </div>
+          <div class="col-sm-4 col-xs-4 text-center"><a  href="#" >Educive.com</a></div>
+          <div class="col-sm-4 col-xs-4 text-right"><a href="#">Login</a></div>
+        </div>
+        </div>
+      </div>
+      <nav id="navbar-collapse" class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="color:black">Educive.com</a>
+            <a class="navbar-brand full-nav-only" href="#" style="color:black">Educive.com</a>
+            <!-- Search bar in collapse -->
+            <div id="collapse-search" class="input-group collapse-only">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="button-search"><i class="material-icons">search</i></button>
+              </span>
+            </div>
           </div>
-          <div class="input-group  pull-right">
+          <!-- Search form for full navbar -->
+          <div id="full-nav-search" class="input-group full-nav-only pull-right">
             <input type="text" id="input-search" class="form-control  pull-right" placeholder="Search for...">
             <span class="input-group-btn">
               <a class="button-search" href="#"><i class="material-icons">search</i></a>
@@ -52,11 +56,13 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Home</a></li>
               <li class="dropdown">
-                <a href="#">Vacancies <span class="caret"></span></a>
+                <a href="https://getbootstrap.com/examples/navbar/">Vacancies <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Internship</a></li>
+                  <li><a href="https://getbootstrap.com/examples/navbar/">Internship</a></li>
                   <li><a href="#">Jobs</a></li>
                   <li><a href="#">Volunteering</a></li>
+                  <li class="collapse-only"><a href="#">View All</a></li>
+
                 </ul>
               </li>
               <li class="dropdown">
@@ -65,6 +71,8 @@
                   <li><a href="#">Conference</a></li>
                   <li><a href="#">Trainings</a></li>
                   <li><a href="#">Seminar</a></li>
+                  <li class="collapse-only"><a href="#">View All</a></li>
+
                 </ul>
               </li>
               <li class="dropdown">
@@ -74,10 +82,11 @@
                   <li><a href="#">PhD</a></li>
                   <li><a href="#">Fellowship</a></li>
                   <li><a href="#">Master</a></li>
+                  <li class="collapse-only"><a href="#">View All</a></li>
                 </ul>
               </li>
               <li><a href="#">Grants</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="https://getbootstrap.com/examples/navbar/">Contact Us</a></li>
             </ul>
 
           </div><!-- /.navbar-collapse -->
@@ -85,313 +94,373 @@
       </nav>
 
       <section id="company" class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
 
-        <div class="col-md-8 col-sm-8">
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item red-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image1.jpg">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+            <section id= "company-info" class="right-bar row">
+              <div class="body col-md-12 col-xs-12 col-sm-12  text-center">
+                <div class="col-md-12  col-sm-12 col-xs-6  img-box">
+                  <img src="assets/images/azercell.jpg">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h4>Azercell</h4>
+                  <a class="button-custom" href="#">Follow</a>
+                  <p>Lorem ipsum dolor sit amet, vel ea rebum maiestatis. Possim meliore dolores ut usu. Sit ex case iuvaret. Te eum ponderum probatus petentium. Ex animal eruditi vis, ius ad percipit expetendis.
+                    At has mazim dolorum postulant. Everti maiorum ei cum, ad vocent hendrerit mea. Brute illum denique pri ex, malis labitur consectetuer quns, integre iudicabit has et, sed ad dolore intellegat.</p>
+                  <table>
+
+                    <tr>
+                      <td class="icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </td>
+                      <td class="detail">
+                        <a href="tel:+994505050505">(050)505-0505</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </td>
+                      <td class="detail">
+                        <a href="https://www.facebook.com/azercell/?fref=ts">Facebook</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="icon">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                      </td>
+                      <td class="detail">
+                        <a href="http://www.azercell.com">Website</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </td>
+                      <td class="detail">
+                        <a href="http://www.twitter.com/azercell">Twitter</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </td>
+                      <td class="detail">
+                        <span>Azadlıq Prospekti, 23</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <div class="vertical-div"></div>
+          </div>
+          <div class="col-md-8 col-sm-8 no-padding">
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item red-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image1.jpg">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>14 Jul, 2015</span>
+                    </li>
+                    <li>
+                      <a href="#"><i class="material-icons">business</i>Code Academy</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>14 Jul, 2015</span>
-                  </li>
-                  <li>
-                    <a href="#"><i class="material-icons">business</i>Code Academy</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item red-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image2.jpg">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item red-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image2.jpg">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan and some other post-soviet republics Unpaid Internship Opportunity at Delegation</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>12 Jun, 2016</span>
+                    </li>
+                    <li>
+                      <a href="#"><i class="material-icons">business</i>Park Inn</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan and some other post-soviet republics Unpaid Internship Opportunity at Delegation</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>12 Jun, 2016</span>
-                  </li>
-                  <li>
-                    <a href="#"><i class="material-icons">business</i>Park Inn</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item green-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image3.jpg">
-                <div class="post-item-actions">
-                  <form class="" action="index.html" method="post">
-                    <div class="form-group">
-                      <label for="datetime">Choose date and time for reminder</label>
-                      <input type="datetime-local" id="datetime">
-                    </div>
-                  </form>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item green-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image3.jpg">
+                  <div class="post-item-actions">
+                    <form class="" action="index.html" method="post">
+                      <div class="form-group">
+                        <label for="datetime">Choose date and time for reminder</label>
+                        <input type="datetime-local" id="datetime">
+                      </div>
+                    </form>
+                  </div>
                 </div>
-              </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan example xaexocmsc efwmscs asdas</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>16 Dec, 2016</span>
-                  </li>
-                  <li>
-                    <a href="#"><i class="material-icons">business</i>Google Inc.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item green-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image4.png">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan example xaexocmsc efwmscs asdas</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>16 Dec, 2016</span>
+                    </li>
+                    <li>
+                      <a href="#"><i class="material-icons">business</i>Google Inc.</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href=""> of the European Union to Azerbaijan</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>21 Jan, 2017</span>
-                  </li>
-                  <li>
-                    <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item green-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/wallpaper.jpg">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item green-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image4.png">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href=""> of the European Union to Azerbaijan</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>21 Jan, 2017</span>
+                    </li>
+                    <li>
+                      <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship sdf sdf sdf sd fsdOpportunity at Delegation of the European Union to Azerbaijan</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>21 Jan, 2017</span>
-                  </li>
-                  <li>
-                    <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item red-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image1.jpg">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item green-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/wallpaper.jpg">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship sdf sdf sdf sd fsdOpportunity at Delegation of the European Union to Azerbaijan</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>21 Jan, 2017</span>
+                    </li>
+                    <li>
+                      <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>14 Jul, 2015</span>
-                  </li>
-                  <li>
-                    <a href="#"><i class="material-icons">business</i>Code Academy</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item red-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image2.jpg">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item red-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image1.jpg">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>14 Jul, 2015</span>
+                    </li>
+                    <li>
+                      <a href="#"><i class="material-icons">business</i>Code Academy</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan and some other post-soviet republics Unpaid Internship Opportunity at Delegation</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>12 Jun, 2016</span>
-                  </li>
-                  <li>
-                    <a href="#"><i class="material-icons">business</i>Park Inn</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item green-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image3.jpg">
-                <div class="post-item-actions">
-                  <form class="" action="index.html" method="post">
-                    <div class="form-group">
-                      <label for="datetime">Choose date and time for reminder</label>
-                      <input type="datetime-local" id="datetime">
-                    </div>
-                  </form>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item red-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image2.jpg">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan example xaexocmsc efwmscs asdas</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>16 Dec, 2016</span>
-                  </li>
-                  <li>
-                    <a href="#"><i class="material-icons">business</i>Google Inc.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item green-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/image4.png">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan and some other post-soviet republics Unpaid Internship Opportunity at Delegation</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>12 Jun, 2016</span>
+                    </li>
+                    <li>
+                      <a href="#"><i class="material-icons">business</i>Park Inn</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href=""> of the European Union to Azerbaijan</a>
-              </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>21 Jan, 2017</span>
-                  </li>
-                  <li>
-                    <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="post-item green-border-bottom">
-              <div class="post-item-image">
-                <img src="assets/images/wallpaper.jpg">
-                <div class="post-item-actions">
-                  <ul class="list-unstyled">
-                    <li class="add-reminder">
-                      <i class="material-icons md-24 add-reminder">add_alert</i>
-                      <span>Add reminder</span>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item green-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image3.jpg">
+                  <div class="post-item-actions">
+                    <form class="" action="index.html" method="post">
+                      <div class="form-group">
+                        <label for="datetime">Choose date and time for reminder</label>
+                        <input type="datetime-local" id="datetime">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan example xaexocmsc efwmscs asdas</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>16 Dec, 2016</span>
+                    </li>
+                    <li>
+                      <a href="#"><i class="material-icons">business</i>Google Inc.</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="post-item-desc">
-                <a href="">Unpaid Internship sdf sdf sdf sd fsdOpportunity at Delegation of the European Union to Azerbaijan</a>
+            </div>
+
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item green-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/image4.png">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href=""> of the European Union to Azerbaijan</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>21 Jan, 2017</span>
+                    </li>
+                    <li>
+                      <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="post-item-details">
-                <ul class="list-unstyled list-inline">
-                  <li>
-                    <i class="material-icons">date_range</i>
-                    <span>21 Jan, 2017</span>
-                  </li>
-                  <li>
-                    <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
-                  </li>
-                </ul>
+            </div>
+
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="post-item green-border-bottom">
+                <div class="post-item-image">
+                  <img src="assets/images/wallpaper.jpg">
+                  <div class="post-item-actions">
+                    <ul class="list-unstyled">
+                      <li class="add-reminder">
+                        <i class="material-icons md-24 add-reminder">add_alert</i>
+                        <span>Add reminder</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-item-desc">
+                  <a href="">Unpaid Internship sdf sdf sdf sd fsdOpportunity at Delegation of the European Union to Azerbaijan</a>
+                </div>
+                <div class="post-item-details">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <i class="material-icons">date_range</i>
+                      <span>21 Jan, 2017</span>
+                    </li>
+                    <li>
+                      <a href="#" alt="Eurasia Partnership Foundation"><i class="material-icons">business</i>Eurasia Partnership Foundations</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 col-sm-4">
-
-        </div>
-
       </section>
 
       <div id="popUp">

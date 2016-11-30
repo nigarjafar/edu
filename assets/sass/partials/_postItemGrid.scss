@@ -16,9 +16,10 @@
       -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
       box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+      box-shadow: 1px 1px 3px 0px darken($background-color,10%);
       .post-item-image{
         width:100%;
-        height:165px;
+        max-height:165px;
         position: relative;
         overflow:hidden;
         .post-item-actions{
@@ -37,13 +38,19 @@
         img{
           top:0px;
           position: relative;
-          min-height: 165px;
-          max-width:100%;
-          //width:100%;
+          //min-height: 165px;
+          //max-width:100%;
+          width:100%;
+          transition-duration: $img-anim-duration;
+        }
+        &:hover img{
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
         }
       }
       .post-item-desc{
-        padding:15px 0 15px 0;
+        padding:15px 0 30px 0;
         a{
           text-decoration: none;
           font-size:16px;
@@ -53,7 +60,7 @@
       .post-item-details{
         position:absolute;
         bottom:10px;
-      left:15px;
+        left:15px;
         li{
           opacity:.5;
           transition-duration:.4s;

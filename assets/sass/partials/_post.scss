@@ -1,7 +1,6 @@
 #post{
   margin-top:80px;
   margin-bottom:30px;
-
   .col-md-8{
     padding-left:0;
     @media screen and (max-width: 960px) {
@@ -9,6 +8,7 @@
     }
     .single-post{
       background-color: white;
+      padding-bottom: 10px;
       div{
         padding:0 $padding-vertical-in; // all divs except .single-post-image
       }

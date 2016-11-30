@@ -67,9 +67,9 @@
         a:hover, a:visited{
           background:#EEF1F4;
         }
-        a:focus{
-          background:darken(#EEF1F4, 10%);
-        }
+        // a:focus{
+        //   background:darken(#EEF1F4, 10%);
+        // }
       }
       .divider{
         background: lighten($footer-color, 20%);
