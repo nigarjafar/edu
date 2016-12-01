@@ -19,29 +19,33 @@
     </head>
     <body>
     <div class="main-wrapper">
-      <nav id="top-bar" class="navbar navbar-fixed-top">
+      <div id="top-collapse" class="collapse-only container-fluid">
         <div class="container">
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div>
-            <ul class="nav navbar-nav navbar-left">
-              <li style="margin-left:-15px;"><a href="#" >Name</a></li>
-              <li><a href="#">Add New Post</a></li>
-              <li><a href="#">View Your Posts</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Log out</a></li>
-            </ul>
-
-
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <nav id="navbar" class="navbar navbar-fixed-top" style="top:39px">
+          <div class="row">
+          <div class="col-sm-4 col-xs-4">
+            <button id="collapse-button" class="collapse-only">
+               <i class="material-icons">menu</i>
+            </button>
+          </div>
+          <div class="col-sm-4 col-xs-4 text-center"><a  href="#" >Educive.com</a></div>
+          <div class="col-sm-4 col-xs-4 text-right"><a href="#">Login</a></div>
+        </div>
+        </div>
+      </div>
+      <nav id="navbar-collapse" class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="color:black">Educive.com</a>
+            <a class="navbar-brand full-nav-only" href="#" style="color:black">Educive.com</a>
+            <!-- Search bar in collapse -->
+            <div id="collapse-search" class="input-group collapse-only">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="button-search"><i class="material-icons">search</i></button>
+              </span>
+            </div>
           </div>
-          <div class="input-group  pull-right">
+          <!-- Search form for full navbar -->
+          <div id="full-nav-search" class="input-group full-nav-only pull-right">
             <input type="text" id="input-search" class="form-control  pull-right" placeholder="Search for...">
             <span class="input-group-btn">
               <a class="button-search" href="#"><i class="material-icons">search</i></a>
@@ -52,11 +56,13 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Home</a></li>
               <li class="dropdown">
-                <a href="#">Vacancies <span class="caret"></span></a>
+                <a href="https://getbootstrap.com/examples/navbar/">Vacancies <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Internship</a></li>
+                  <li><a href="https://getbootstrap.com/examples/navbar/">Internship</a></li>
                   <li><a href="#">Jobs</a></li>
                   <li><a href="#">Volunteering</a></li>
+                  <li class="collapse-only"><a href="#">View All</a></li>
+
                 </ul>
               </li>
               <li class="dropdown">
@@ -65,6 +71,8 @@
                   <li><a href="#">Conference</a></li>
                   <li><a href="#">Trainings</a></li>
                   <li><a href="#">Seminar</a></li>
+                  <li class="collapse-only"><a href="#">View All</a></li>
+
                 </ul>
               </li>
               <li class="dropdown">
@@ -74,17 +82,18 @@
                   <li><a href="#">PhD</a></li>
                   <li><a href="#">Fellowship</a></li>
                   <li><a href="#">Master</a></li>
+                  <li class="collapse-only"><a href="#">View All</a></li>
                 </ul>
               </li>
               <li><a href="#">Grants</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="https://getbootstrap.com/examples/navbar/">Contact Us</a></li>
             </ul>
 
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
 
-      <section id="category" class="container">
+      <section id="category" class="container" style="padding-top:50px">
 
         <div class="col-md-12">
           <h2>
@@ -97,14 +106,6 @@
           <div class="post-item red-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image1.jpg">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan</a>
@@ -127,14 +128,6 @@
           <div class="post-item red-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image2.jpg">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan and some other post-soviet republics Unpaid Internship Opportunity at Delegation</a>
@@ -157,14 +150,6 @@
           <div class="post-item green-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image3.jpg">
-              <div class="post-item-actions">
-                <form class="" action="index.html" method="post">
-                  <div class="form-group">
-                    <label for="datetime">Choose date and time for reminder</label>
-                    <input type="datetime-local" id="datetime">
-                  </div>
-                </form>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan example xaexocmsc efwmscs asdas</a>
@@ -187,14 +172,6 @@
           <div class="post-item green-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image4.png">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href=""> of the European Union to Azerbaijan</a>
@@ -217,14 +194,6 @@
           <div class="post-item green-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/wallpaper.jpg">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship sdf sdf sdf sd fsdOpportunity at Delegation of the European Union to Azerbaijan</a>
@@ -247,14 +216,6 @@
           <div class="post-item red-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image1.jpg">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan</a>
@@ -276,15 +237,7 @@
         <div class="col-md-4 col-xs-12 col-sm-6">
           <div class="post-item red-border-bottom">
             <div class="post-item-image">
-              <img src="assets/images/image2.jpg">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
+              <img src="assets/images/screen.jpeg">
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan and some other post-soviet republics Unpaid Internship Opportunity at Delegation</a>
@@ -307,14 +260,6 @@
           <div class="post-item green-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image3.jpg">
-              <div class="post-item-actions">
-                <form class="" action="index.html" method="post">
-                  <div class="form-group">
-                    <label for="datetime">Choose date and time for reminder</label>
-                    <input type="datetime-local" id="datetime">
-                  </div>
-                </form>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship Opportunity at Delegation of the European Union to Azerbaijan example xaexocmsc efwmscs asdas</a>
@@ -337,14 +282,6 @@
           <div class="post-item green-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/image4.png">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href=""> of the European Union to Azerbaijan</a>
@@ -367,14 +304,6 @@
           <div class="post-item green-border-bottom">
             <div class="post-item-image">
               <img src="assets/images/wallpaper.jpg">
-              <div class="post-item-actions">
-                <ul class="list-unstyled">
-                  <li class="add-reminder">
-                    <i class="material-icons md-24 add-reminder">add_alert</i>
-                    <span>Add reminder</span>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="post-item-desc">
               <a href="">Unpaid Internship sdf sdf sdf sd fsdOpportunity at Delegation of the European Union to Azerbaijan</a>

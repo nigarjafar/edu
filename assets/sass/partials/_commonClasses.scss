@@ -56,7 +56,7 @@ input[type="text"],input[type="password"],input[type="submit"],input[type="email
 }
 
 i.material-icons{
-  vertical-align:text-bottom;
+  vertical-align:bottom;
 }
 
 #popUp{
@@ -92,4 +92,8 @@ i.material-icons{
   vertical-align: super;
   background-color: lighten(#777,10%);
   border-radius: 10px;
+}
+
+.no-padding{
+  padding:0 !important
 }

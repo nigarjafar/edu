@@ -53,6 +53,12 @@
         overflow:hidden;
         img{
           width:100%;
+          transition-duration: $img-anim-duration;
+        }
+        &:hover img{
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
         }
       }
 
@@ -71,6 +77,12 @@
         overflow:hidden;
         img{
           width:100%;
+          transition-duration: $img-anim-duration;
+        }
+        &:hover img{
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
         }
       }
     }
