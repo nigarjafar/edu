@@ -17,7 +17,7 @@
       -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
       box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
       box-shadow: 1px 1px 3px 0px darken($background-color,10%);
-      .post-item-image{
+      .img-box{
         width:100%;
         max-height:165px;
         position: relative;
@@ -42,11 +42,6 @@
           //max-width:100%;
           width:100%;
           transition-duration: $img-anim-duration;
-        }
-        &:hover img{
-          -moz-transform: scale(1.1);
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
         }
       }
       .post-item-desc{

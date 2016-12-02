@@ -97,3 +97,15 @@ i.material-icons{
 .no-padding{
   padding:0 !important
 }
+
+.big-post, .small-post, #rightBarPosts .row ,.post-item{
+  &:hover{
+    .img-box{
+       img{
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -35,7 +35,6 @@
         transition-property: color,border;
       }
       ul{
-        //box-shadow: none;
         border-radius: 0;
         border:none;
       }
@@ -62,6 +61,13 @@
             }
           }
         }
+      }
+      .active{
+          padding-bottom:14px;
+          box-sizing:border-box;
+          background: white;
+          border-bottom:1px solid $primaryColor;
+          color:$primaryColor;
       }
     }
   }

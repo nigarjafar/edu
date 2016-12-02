@@ -55,13 +55,7 @@
           width:100%;
           transition-duration: $img-anim-duration;
         }
-        &:hover img{
-          -moz-transform: scale(1.1);
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-        }
       }
-
     }
 
     .small-post{
@@ -70,7 +64,6 @@
         margin:$padding-vertical-in/2 0;
         font-size:0.9em;
       }
-
       .img-box{
         padding-right:0;
         height:70px;
@@ -78,11 +71,6 @@
         img{
           width:100%;
           transition-duration: $img-anim-duration;
-        }
-        &:hover img{
-          -moz-transform: scale(1.1);
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
         }
       }
     }
